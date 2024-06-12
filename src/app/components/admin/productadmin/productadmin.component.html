@@ -1,0 +1,39 @@
+
+<div class="flex h-screen bg-gray-100">
+    <div class="bg-gray-800 w-1/6">
+        <app-contenadmin></app-contenadmin>
+</div>
+    <!-- Main content -->
+    <div class="w-5/6 p-8">
+      <!-- Page content goes here -->
+<a href="admin/adminadd"><button class="btn btn-success">Thêm</button></a>
+
+<h1 class="font-bold mb-[20px] text-2xl text-red-400">Danh sách sản phẩm</h1>
+<table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th>STT</th>
+        <th>Tên sản phẩm</th>
+        <th>Ảnh</th>
+        <th>Giá tiền</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(product of products;track product.id; let i = $index){
+        <tr>
+            <td>{{i+1}}</td>
+            <td>{{product.name}}</td>
+            <td><img class="w-[90px] h-[90px]" src="{{product.image}}"/></td>
+            <td>{{product.price}}</td>
+            <td>
+                <a href="admin/editproduct/{{product.id}}">Sửa</a> | 
+                <button (click)="onDelete(product.id)">Xóa</button>
+            </td>
+        </tr>   
+      }
+    </tbody>
+  </table>
+
+</div>
+</div>

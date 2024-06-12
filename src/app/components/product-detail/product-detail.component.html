@@ -1,0 +1,202 @@
+<!-- content -->
+<section class="py-5">
+  <div class="container">
+    <div class="row gx-5">
+      <aside class="col-lg-6">
+        @if (product) {
+        <div class="border rounded-4 mb-3 d-flex justify-content-center">
+          <a data-fslightbox="mygalley" class="rounded-4" target="_blank" data-type="image">
+            <img style="max-width: 100%; max-height: 100vh; margin: auto;" class="rounded-4 fit"
+              src="{{product.image}}" />
+          </a>
+        </div>
+      
+        <div class="d-flex justify-content-center mb-3">
+          <a data-fslightbox="mygalley" class="border mx-1 rounded-2" target="_blank" data-type="image"
+            class="item-thumb">
+            <img style="max-width: 100%; max-height: 100vh; margin: auto;" class="rounded-2"
+              src="{{product.image}}" />
+          </a>
+          <a data-fslightbox="mygalley" class="border mx-1 rounded-2" target="_blank" data-type="image"
+            class="item-thumb">
+            <img style="max-width: 100%; max-height: 100vh; margin: auto;" class="rounded-2"
+              src="{{product.image}}" />
+          </a>
+        </div>
+        }
+        <!-- thumbs-wrap.// -->
+        <!-- gallery-wrap .end// -->
+      </aside>
+      <main class="col-lg-6">
+        <div class="ps-lg-3">
+          <p class="title font-medium text-[#003F62] text-[29px]" *ngIf="product">
+            {{ product.name }}
+          </p>
+          <div class="mb-3"*ngIf="product">
+            <p class=" font-bold text-[29px]">${{ product.price }}</p>
+          </div>
+          <div class="d-flex flex-row my-3">
+            <div class="text-warning mb-1 me-2">
+              <i class="fa fa-star-o mr-[8px]"></i>
+              <i class="fa fa-star-o mr-[8px]"></i>
+              <i class="fa fa-star-o mr-[8px]"></i>
+              <i class="fa fa-star-o mr-[8px]"></i>
+
+              <span class="text-muted">No reviews</span>
+            </div>
+
+          </div>
+          <div class="flex flex-wrap-reverse">
+            <div><span class="font-mono font-semibold">Availability :</span></div>
+            <div> <span class="text-success ms-2 text-[#30BD57] font-medium">In stock</span></div>
+          </div>
+
+
+          <p class="my-[15px]">
+            Hurry up! only 34 product left in stock!
+          </p>
+          <hr />
+          <div class="row mt-[15px]">
+            <dt class="col-3">Color</dt>
+            <button class="bg-[#D0EC48]  w-[2px] rounded-full mr-[8px]"></button>
+            <button class="bg-[#565656]  w-[2px] rounded-full"></button>
+            <dl class="flex flex-wrap items-center mt-[20px]">
+              <dt class="w-full sm:w-auto mr-2">Size:</dt>
+              <dd class="flex flex-wrap">
+                <p class="border h-[32px] w-[63px] bg-[#EEEEEE] text-[19px] pl-[20px] mr-[10px]">30</p>
+                <p class="border h-[32px] w-[63px] bg-[#EEEEEE] text-[19px] pl-[20px] mr-[10px]">55</p>
+                <p class="border h-[32px] w-[63px] bg-[#EEEEEE] text-[19px] pl-[20px] mr-[10px]">42</p>
+                <p class="sborder h-[32px] w-[63px] bg-[#EEEEEE] text-[19px] pl-[20px]">48</p>
+              </dd>
+            </dl>
+
+          </div>
+
+
+
+          <div class="row mb-4">
+            <!-- col.// -->
+            <div class="col-md-4 col-6 mb-3">
+              <label class="mb-2 d-block">Quantity</label>
+              <div class="input-group mb-3" style="width: 170px;">
+                <button class=" bg-[#EEEEEE] btn btn-white border border-secondary px-3" type="button"
+                  id="button-addon1" data-mdb-ripple-color="dark">
+                  <p>-</p>
+                </button>
+                <input type="text" class=" bg-[#EEEEEE] form-control text-center border border-secondary"
+                  placeholder="14" aria-label="Example text with button addon" aria-describedby="button-addon1" />
+                <button class=" bg-[#EEEEEE] btn btn-white border border-secondary px-3" type="button"
+                  id="button-addon2" data-mdb-ripple-color="dark">
+                  <p>+</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a href="/cart"
+            class="btn btn-warning shadow-0 rounded-[30px] w-[220px] h-[73px] font-medium text-2xl pt-[15px]"> Add to
+            cart </a>
+          <a href="/cart"
+            class="btn btn-warning shadow-0 ml-[10px] rounded-[30px] w-[220px] h-[73px] font-medium text-2xl pt-[15px]">
+            Buy it now </a>
+          <a href="#"
+            class="btn btn-light border border-secondary py-2 icon-hover px-3 rounded-full ml-[10px] w-[73px] h-[73px] ">
+            <i class=" fa fa-heart-o pt-[10px] text-3xl"></i> </a>
+          <hr class="my-[20px]"/>
+          <div class="flex flex-wrap-reverse">
+            <div><span class="font-mono font-semibold">Sku:</span></div>
+            <div> <span class=" ms-2 font-medium">01133-9-9</span></div>
+          </div>
+          <div class="flex flex-wrap-reverse mt-[20px]">
+            <div><span class="font-mono font-semibold">Category:</span></div>
+            <div> <span class=" ms-2 font-medium">20%off 49$off Alex remote</span></div>
+          </div>
+          <div class="flex flex-wrap-reverse mt-[20px]">
+            <div><span class="font-mono font-semibold">Share:</span></div>
+            <img src="/assets/image/a21.png" alt="" class="w-[146px] h-[24px]">
+          </div>
+        </div>
+      </main>
+    </div>
+
+  </div>
+</section>
+
+<!-- content -->
+<div class="w-4/5 mx-auto">
+  <div class="flex justify-center mb-4">
+    <button class="px-4 py-2 border border-gray-300 rounded-[20px] w-[185px] h-[60px] ">Description</button>
+    <button class="px-4 py-2 bg-[#003F62] text-white ml-2 rounded-[20px] w-[185px] h-[60px]">Review</button>
+  </div>
+  <div class="border border-gray-300 p-4 rounded text-left">
+    <h3 class="text-[#003F62] font-bold mb-[10px] text-2xl">Customer reviews</h3>
+    <p>No reviews yet</p>
+    <button class="mt-2 px-4 py-2 bg-[#003F62] text-white rounded">Write a review</button>
+  </div>
+</div>
+<div class="">
+  <div>
+    <p class="font-bold text-3xl ml-[180px] text-[#1B5A7D] my-[50px]">Related product</p>
+  </div>
+  <!-- product -->
+  <div class="flex justify-between  mx-[180px] mb-[25px]">
+    <div class="product-card border rounded-[20px] h-[340px] w-[25%] mr-[15px]">
+      <img src="/assets/image/a15.png" alt="" class="mx-auto">
+      <p class="text-[#1B5A7D] font-bold text-[20px] ml-[15px] mb-[20px]">Wireless headphones</p>
+      <p class="font-bold text-[20px] ml-[15px] mb-[20px]">$11,70</p>
+      <div class="flex ml-[15px]">
+        <i class="fa fa-star mr-[10px]"></i>
+        <i class="fa fa-star mr-[10px]"></i>
+        <i class="fa fa-star mr-[10px]"></i>
+        <i class="fa fa-star mr-[10px]"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <a href="/cart"
+        class="btn btn-warning shadow-0 rounded-[30px] w-[220px] h-[73px] font-medium text-2xl pt-[15px] add-to-cart">Add
+        to cart</a>
+    </div>
+    <div class="product-card border rounded-[20px] h-[340px] w-[25%] mr-[15px]">
+      <img src="/assets/image/a16.png" alt="" class="mx-auto">
+      <p class="text-[#1B5A7D] font-bold text-[20px] ml-[15px] mb-[20px]">Wireless headphones</p>
+      <p class="font-bold text-[20px] ml-[15px] mb-[20px]">$11,70</p>
+      <div class="flex ml-[15px]">
+        <i class="fa fa-star mr-[10px]"></i>
+        <i class="fa fa-star mr-[10px]"></i>
+        <i class="fa fa-star mr-[10px]"></i>
+        <i class="fa fa-star mr-[10px]"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <a href="/cart"
+        class="btn btn-warning shadow-0 rounded-[30px] w-[220px] h-[73px] font-medium text-2xl pt-[15px] add-to-cart">Add
+        to cart</a>
+    </div>
+    <div class="product-card border rounded-[20px] h-[340px] w-[25%] mr-[15px]">
+      <img src="/assets/image/a17.png" alt="" class="mx-auto">
+      <p class="text-[#1B5A7D] font-bold text-[20px] ml-[15px] mb-[20px]">Wireless headphones</p>
+      <p class="font-bold text-[20px] ml-[15px] mb-[20px]">$11,70</p>
+      <div class="flex ml-[15px]">
+        <i class="fa fa-star mr-[10px]"></i>
+        <i class="fa fa-star mr-[10px]"></i>
+        <i class="fa fa-star mr-[10px]"></i>
+        <i class="fa fa-star mr-[10px]"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <a href="/cart"
+        class="btn btn-warning shadow-0 rounded-[30px] w-[220px] h-[73px] font-medium text-2xl pt-[15px] add-to-cart">Add
+        to cart</a>
+    </div>
+    <div class="product-card border rounded-[20px] h-[340px] w-[25%]">
+      <img src="/assets/image/a18.png" alt="" class="mx-auto">
+      <p class="text-[#1B5A7D] font-bold text-[20px] ml-[15px] mb-[20px]">Wireless headphones</p>
+      <p class="font-bold text-[20px] ml-[15px] mb-[20px]">$11,70</p>
+      <div class="flex ml-[15px]">
+        <i class="fa fa-star mr-[10px]"></i>
+        <i class="fa fa-star mr-[10px]"></i>
+        <i class="fa fa-star mr-[10px]"></i>
+        <i class="fa fa-star mr-[10px]"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <a href="/cart"
+        class="btn btn-warning shadow-0 rounded-[30px] w-[220px] h-[73px] font-medium text-2xl pt-[15px] add-to-cart">Add
+        to cart</a>
+    </div>
+  </div>

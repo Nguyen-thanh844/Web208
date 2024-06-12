@@ -1,0 +1,162 @@
+<div>
+    <img src="/assets/image/banner.png" alt="" class="mx-auto mt-[20px] mb-[40px]">
+</div>
+<!-- slideshow -->
+<div class="chu">
+    <div class="mb-[50px]">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="item carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="/assets/image/a12.png" class="img-fluid" alt="" />
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="thumb-wrapper">
+
+                                        <div class="img-box">
+                                            <img src="/assets/image/a23.png" class="img-fluid" alt="Headphone" />
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="thumb-wrapper">
+
+                                        <div class="img-box">
+                                            <img src="/assets/image/a24.png" class="img-fluid" alt="" />
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item carousel-item">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="thumb-wrapper">
+
+                                        <div class="img-box">
+                                            <img src="/assets/image/a12.png" class="img-fluid" alt="Play Station" />
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="thumb-wrapper">
+
+                                        <div class="img-box">
+                                            <img src="/assets/image/a23.png" class="img-fluid" alt="Macbook" />
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="thumb-wrapper">
+
+                                        <div class="img-box">
+                                            <img src="/assets/image/a24.png" class="img-fluid" alt="Speaker" />
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- product -->
+<div class="flex justify-between my-[40px] text-[#1B5A7D]">
+    <div>
+        <p class="font-bold text-3xl ml-[50px]">Popular products</p>
+    </div>
+    <div class="flex mr-[50px]">
+        <div class="border rounded-[20px] h-[40px] w-[135px] " *ngFor="let sp of productList">
+            <a href="category/{{sp.id}}" class="ml-[40px]  font-medium">{{sp.name | uppercase}}</a>
+        </div>
+    </div>
+</div>
+<app-product-item></app-product-item>
+<app-product-item></app-product-item>
+
+<!-- sale -->
+<div>
+    <img src="/assets/image/a14.png" alt="" class="mx-auto mt-[140px]">
+</div>
+<!-- Latest news -->
+<div class="flex justify-between my-[40px] text-[#1B5A7D]">
+    <div>
+        <p class="font-bold text-3xl ml-[50px]">Latest news</p>
+    </div>
+    <div>
+        <p class="text-3xl font-2xl mr-[50px]">View all</p>
+    </div>
+</div>
+<div class=" flex justify-between mb-[180px]">
+    <div class="border rounded-[20px] h-[370px] w-[46%] ml-[50px] flex justify-between">
+        <div class="w-full">
+            <img src="/assets/image/a11.png" alt="" class="h-[288px] ml-[15px] mt-[43px]">
+
+        </div>
+        <div class="mr-[10px] w-full text-[#1B5A7D] mt-[40px] text-[20px]">
+            <div class="border rounded-[20px] h-[40px] w-[147px] mb-[15px]">
+                <p class="ml-[15px] font-medium">22,oct,2021</p>
+            </div>
+            <p class="font-bold">Who avoids a </p>
+            <p class="font-bold">pain that produces?</p>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>consectetur. Nec sit enim tellus faucibus</p>
+            <p>bibendum ullamcorper. Phasellus</p>
+            <p>tristique aenean at lorem sed</p>
+            <p>scelerisque.</p>
+            <p>By spacing tech</p>
+        </div>
+    </div>
+    <div class="border rounded-[20px] h-[370px] w-[47%] mr-[50px] flex justify-between">
+        <div class="w-full">
+            <img src="/assets/image/a13.png" alt="" class="h-[288px] ml-[15px] mt-[43px]">
+
+        </div>
+        <div class="mr-[10px] w-full text-[#1B5A7D] mt-[40px] text-[20px]">
+            <div class="border rounded-[20px] h-[40px] w-[147px] mb-[15px]">
+                <p class="ml-[15px] font-medium">22,oct,2021</p>
+            </div>
+            <p class="font-bold">Who avoids a </p>
+            <p class="font-bold">pain that produces?</p>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>consectetur. Nec sit enim tellus faucibus</p>
+            <p>bibendum ullamcorper. Phasellus</p>
+            <p>tristique aenean at lorem sed</p>
+            <p>scelerisque.</p>
+            <p>By spacing tech</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.head-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header1{
+    margin-left:50px;
+    margin-top:25px;
+}
+.header2{
+    margin-right:50px;
+    margin-top:25px;
+}
+.header2 img{
+    height:32px;
+     margin-right:15px;
+}
+.item1{
+    margin-right:30px;
+}
+.header3 img{
+    height: 95px;
+    margin-left:40px;
+}
+.header4{
+    margin-right:50px;
+    margin-top:35px;
+
+}
+.header4 p{
+    color: white;
+    margin-top:10px;
+}
+.header4 img{
+    height:40px;
+    margin-left:15px;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    margin:auto;
+}
+
+.menu li{
+    padding: 23px;
+    
+}
+
+.menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-weight: bold;
+
+}
+.menu li:hover {
+    background-color: #EDA415;
+}
+.header5{
+    margin-top:25px;
+    margin-right:50px;
+    margin-left:950px;
+    color: #003F62;
+    font-weight: bold;
+}
+.header6{
+    margin-left:50px;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 440px;
+  border: 1px solid #003F62;
+  border-right: none;
+  padding: 5px;
+  height: 56px;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  color: #9DBFAF;
+  
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 130px;
+  height: 55px;
+  border: 0.5px solid #EDA415;
+  background: #EDA415;
+  text-align: center;
+  color: #fff;
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+  /* font-size: 20px; */
+  /* margin-top:5px; */
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  margin-right:600px;
+  margin-top:25px;
+}
+
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel .item {
+	color: #747d89;
+	min-height: 325px;
+	text-align: center;
+	overflow: hidden;
+}
+.carousel .thumb-wrapper {
+	padding: 25px 15px;
+	background: #fff;
+	border-radius: 6px;
+	text-align: center;
+	position: relative;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+.carousel .item .img-box {
+	height: 170px;
+	margin-bottom: 20px;
+	width: 100%;
+	position: relative;
+}
+.carousel .item img {	
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.carousel .item h4 {
+	font-size: 18px;
+}
+.carousel .item h4, .carousel .item p, .carousel .item ul {
+	margin-bottom: 5px;
+}
+.carousel .thumb-content .btn {
+	color: #7ac400;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: none;
+	border: 1px solid #7ac400;
+	padding: 6px 14px;
+	margin-top: 5px;
+	line-height: 16px;
+	border-radius: 20px;
+}
+.carousel .thumb-content .btn:hover, .carousel .thumb-content .btn:focus {
+	color: #fff;
+	background: #7ac400;
+	box-shadow: none;
+}
+.carousel .thumb-content .btn i {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.carousel .item-price {
+	font-size: 13px;
+	padding: 2px 0;
+}
+.carousel .item-price strike {
+	opacity: 0.7;
+	margin-right: 5px;
+}
+.carousel-control-prev, .carousel-control-next {
+	height: 34px;
+	width: 5px;
+	background: #7ac400;	
+	margin: auto 0;
+	border-radius: 4px;
+	opacity: 0.8;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover {
+	background: #78bf00;
+	opacity: 1;
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 36px;
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	margin: -19px 0 0 0;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	color: #fff;
+	text-shadow: none;
+	font-weight: bold;
+}
+.carousel-control-prev i {
+	margin-left: -2px;
+}
+.carousel-control-next i {
+	margin-right: -4px;
+}		
+.carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 4px;
+	border-radius: 50%;
+	border: none;
+}
+.carousel-indicators li {	
+	background: rgba(0, 0, 0, 0.2);
+}
+.carousel-indicators li.active {	
+	background: rgba(0, 0, 0, 0.6);
+}
+.carousel .wish-icon {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 99;
+	cursor: pointer;
+	font-size: 16px;
+	color: #abb0b8;
+}
+.carousel .wish-icon .fa-heart {
+	color: #ff6161;
+}
+.star-rating li {
+	padding: 0;
+}
+.star-rating i {
+	font-size: 14px;
+	color: #ffc000;
+}

@@ -1,0 +1,60 @@
+<div class="w-full">
+    <div class="bg-white h-[72px] flex justify-between">
+        <div class="header1">
+            Need help? Call us: (+98) 0234 456 789
+        </div>
+        <div class="header2 flex ">
+            <img src="/assets/image/a1.png" alt="">
+            <p class="item1">Our store</p>
+            <img src="/assets/image/a2.png" alt="">
+            <p>Track your order</p>
+        </div>
+    </div>
+    <div class="bg-[#003F62] h-[100px] flex justify-between">
+        <div class="header3">
+            <img src="/assets/image/logo.png" alt="">
+           
+        </div>
+        <div class="wrap">
+            <div class="search" >
+                <form [formGroup]="searchForm" (ngSubmit)="onSearch()">
+                    <input type="text" class="searchTerm" placeholder="Serach any things" formControlName="keywords">
+                    <button type="submit" class="searchButton">
+                      Search
+                   </button>
+                </form>
+              
+            </div>
+         </div>
+        <div class="header4 flex">
+            <a href="/login"><img src="/assets/image/a3.png" alt=""></a>
+            <a href="/login"><p>Sign in</p></a>
+            <img src="/assets/image/a4.png" alt="">
+            <a href="/login"><p>Sign in</p></a>
+            <img src="/assets/image/a5.png" alt="">
+            <a href="/cart"><p>Cart</p></a>
+        </div>
+    </div>
+    <div class="bg-[#F4F4F4] h-[70px] flex justify-between">
+        <div class="header6">
+            <ul class="menu">
+                <li><a href="">Browse categories</a></li>
+              </ul>
+        </div>
+        <div>
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="/product">Contact</a></li>
+                <li><a href="/detail">About</a></li>
+                <li><a href="/register">Sign Up</a></li>
+              </ul>
+        </div>
+        <div class="header5" >
+            <p>30 Days Free Return</p>
+        </div>
+    </div>
+</div>
+
+
+
+

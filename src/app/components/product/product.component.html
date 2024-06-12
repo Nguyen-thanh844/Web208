@@ -1,0 +1,136 @@
+<div class="flex justify-start mt-[20px] mb-[120px]">
+    <p class="ml-[50px] font-medium text-[16px]">Home > All category ></p>
+</div>
+<div class="flex justify-between">
+    <div class="h-[315px] w-[18%] border-b-2 ml-[50px]">
+        <div class="flex justify-between text-[16px]">
+            <p class="text-[#003F62] font-bold">Categories</p>
+            <p>Reset</p>
+        </div>
+        <div class="flex justify-between text-[16px] my-[10px]">
+            <div class="flex justify-between">
+                <button class="h-[30px] w-[30px] bg-[#B3D4E5] rounded-[6px] mr-[5px]"></button>
+                <p>All categories</p>
+            </div>
+            <p>10</p>
+        </div>
+        <div class="flex justify-between text-[16px] my-[10px]">
+            <div class="flex justify-between">
+                <button class="h-[30px] w-[30px] bg-[#B3D4E5] rounded-[6px] mr-[5px]"></button>
+                <p>Tablet</p>
+            </div>
+            <p>5</p>
+        </div>
+        <div class="flex justify-between text-[16px] my-[10px]">
+            <div class="flex justify-between">
+                <button class="h-[30px] w-[30px] bg-[#B3D4E5] rounded-[6px] mr-[5px]"></button>
+                <p>Laptop</p>
+            </div>
+            <p>5</p>
+        </div>
+        <div class="flex justify-between text-[16px] my-[10px]">
+            <div class="flex justify-between">
+                <button class="h-[30px] w-[30px] bg-[#B3D4E5] rounded-[6px] mr-[5px]"></button>
+                <p>Headphones</p>
+            </div>
+            <p>5</p>
+        </div>
+        <div class="flex justify-between text-[16px] my-[10px]">
+            <div class="flex justify-between">
+                <button class="h-[30px] w-[30px] bg-[#B3D4E5] rounded-[6px] mr-[5px]"></button>
+                <p>Console</p>
+            </div>
+            <p>5</p>
+        </div>
+        <div class="flex justify-between text-[16px] mt-[10px]">
+            <div class="flex justify-between">
+                <button class="h-[30px] w-[30px] bg-[#B3D4E5] rounded-[6px] mr-[5px]"></button>
+                <p>other</p>
+            </div>
+            <p>5</p>
+        </div>
+
+
+    </div>
+    <div class="flex justify-between  mr-[50px] w-[78%] ml-[25px]">
+        @for(product of products;track product.id; let i = $index){
+        <div class="product-grid">
+                <div class="product-image">
+                    <a href="products/{{product.id}}" class="image">
+                        <img class="pic-1" src="{{product.image}}">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="products/{{product.id}}">{{product.name}}</a></h3>
+                    <div class="price"> {{product.price}}</div>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+    
+                    <a class="add-to-cart" href="#">add to cart</a>
+                </div>
+            </div>
+    }
+    </div>
+
+</div>
+<div class="flex justify-end my-[30px]">
+    <div class="flex justify-between  mr-[50px] w-[76%] ">
+        @for(product of products;track product.id; let i = $index){
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image">
+                        <img class="pic-1" src="{{product.image}}">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">{{product.name}}</a></h3>
+                    <div class="price"> {{product.price}}</div>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+    
+                    <a class="add-to-cart" href="#">add to cart</a>
+                </div>
+            </div>
+    }
+    </div>
+</div>
+<div class="flex justify-end my-[30px]">
+    <div class="flex justify-between  mr-[50px] w-[76%] ">
+        @for(product of products;track product.id; let i = $index){
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="#" class="image">
+                        <img class="pic-1" src="{{product.image}}">
+                    </a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">{{product.name}}</a></h3>
+                    <div class="price"> {{product.price}}</div>
+                    <ul class="rating">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                    </ul>
+    
+                    <a class="add-to-cart" href="#">add to cart</a>
+                </div>
+            </div>
+    }
+    </div>
+</div>
+
+<div class="mb-[130px] mt-[130px]">
+    <img src="/assets/image/a14.png" alt="" class="mx-auto ">
+</div>

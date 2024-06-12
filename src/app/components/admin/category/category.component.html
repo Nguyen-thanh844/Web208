@@ -1,0 +1,47 @@
+<div class="flex h-screen bg-gray-100">
+    <div class="bg-gray-800 w-1/6">
+      <!-- Sidebar content -->
+      <app-contenadmin></app-contenadmin>
+    </div>
+    <!-- Main content -->
+    <div class="w-5/6 p-8">
+      <!-- Page content goes here -->
+      
+<h1 class="font-bold mb-[20px] text-2xl text-red-400">Thêm mới danh mục</h1>
+<form [formGroup]="categoryForm" (ngSubmit)="onSubmit()" class="mb-[40px]">
+    <div class="mb-3">
+        <label class="form-label">Tên danh mục</label>
+        <input type="text" class="form-control" placeholder="Tên danh mục" formControlName="name">
+        <span class="text-red-600 text-sm" *ngIf="!categoryForm.controls.name.valid && (categoryForm.controls.name.dirty || categoryForm.controls.name.touched)">
+          Không được để trống 
+        </span>      
+    </div>
+    
+    <button type="submit" class="btn btn-primary" [disabled]="!categoryForm.valid">Submit</button>
+</form>
+
+<h1 class="font-bold mb-[20px] text-2xl text-red-400">Danh mục sản phẩm</h1>
+<table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th>STT</th>
+        <th>Danh mục</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(ct of category;track ct.id; let i = $index){
+        <tr>
+            <td>{{i+1}}</td>
+            <td>{{ct.name}}</td>
+            <td>
+                <a href="#">Sửa</a> | 
+                <button (click)="onDelete(ct.id)">Xóa</button>
+            </td>
+        </tr>   
+      }
+    </tbody>
+  </table>
+
+    </div>
+  </div>

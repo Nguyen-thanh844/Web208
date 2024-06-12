@@ -1,0 +1,42 @@
+
+<div class="flex h-screen  bg-gray-100">
+    <div class="bg-gray-800 w-1/6">
+        <app-contenadmin></app-contenadmin>
+</div>
+    <!-- Main content -->
+    <div class="w-5/6 p-8">
+      <!-- Page content goes here -->
+<h1 class="font-bold mb-[20px] text-2xl text-red-400">Thêm mới sản phẩm</h1>
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()" class="mb-[40px]">
+    <div class="mb-3">
+        <label class="form-label">Tên sản phẩm</label>
+        <input type="text" class="form-control" placeholder="Tên sản phẩm" formControlName="name">
+        <span class="text-red-600 text-sm" *ngIf="!productForm.controls.name.valid && (productForm.controls.name.dirty || productForm.controls.name.touched)">
+          Tên không được để trống 
+        </span>      </div>
+    <div class="mb-3">
+        <label class="form-label">Ảnh</label>
+        <input type="text" class="form-control" placeholder="Ảnh" formControlName="image">
+        <span class="text-red-600 text-sm" *ngIf="!productForm.controls.image.valid && (productForm.controls.image.dirty || productForm.controls.image.touched)">
+            Ảnh không được để trống
+        </span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Giá tiền</label>
+        <input type="number" class="form-control" placeholder="Giá tiền" formControlName="price">
+        <span class="text-red-600 text-sm" *ngIf="!productForm.controls.price.valid && (productForm.controls.price.dirty || productForm.controls.price.touched)">
+            Giá > 2000
+        </span>
+      </div>
+      <select class="form-select" formControlName="category">
+        @for(ct of category;track ct){
+        <option value="{{ct.id}}">{{ct.name}}</option>
+        }
+      </select>
+      <br>
+    <button type="submit" class="btn btn-primary" [disabled]="!productForm.valid">Submit</button>
+</form>
+
+
+</div>
+</div>

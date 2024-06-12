@@ -1,0 +1,20 @@
+<div class="mx-auto max-w-7xl my-[50px] ">
+<h1 class="font-bold mb-[20px] text-2xl text-red-400 text-center">Đăng nhập</h1>
+<form [formGroup]="loginform" (ngSubmit)="onSubmit()" class="mb-[100px]">
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" placeholder="Email" formControlName="email">
+        <span class="text-red-600 text-sm" *ngIf="!loginform.controls.email.valid && (loginform.controls.email.dirty || loginform.controls.email.touched)">
+            Email không hợp lệ
+        </span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="text" class="form-control" placeholder="Password" formControlName="password">
+        <span class="text-red-600 text-sm" *ngIf="!loginform.controls.password.valid && (loginform.controls.password.dirty || loginform.controls.password.touched)">
+            Password không được để trống  và >8
+        </span>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!loginform.valid">Đăng nhập </button>
+</form>
+</div>

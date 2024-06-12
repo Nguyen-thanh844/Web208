@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "name": "Áo",
+      "image": "https://bizweb.dktcdn.net/100/393/859/products/0daf314d-ef42-4141-ba80-779a1a109ab9.jpg?v=1649904744940",
+      "price": 12000,
+      "category": "1",
+      "id": 1
+    },
+    {
+      "name": "Quần",
+      "image": "https://aaajeans.com/wp-content/uploads/2019/07/quan-jeans-nu-AG.jpg",
+      "price": 14000,
+      "category": "2",
+      "id": 2
+    },
+    {
+      "name": "Váy đen",
+      "image": "https://247store.vn/uploads/products/20220607/z3439735412566183bbe512d9122cda0072c3c0e755f4d.jpg",
+      "price": 18000,
+      "category": "3",
+      "id": 3
+    },
+    {
+      "name": "Giày MLB",
+      "image": "https://1sneaker.vn/wp-content/uploads/2022/06/giay-mlb-chunky-liner-new-york-yankees-white-green-5-scaled.jpg",
+      "price": 16000,
+      "category": "4",
+      "id": 4
+    }
+  ],
+  "category": [
+    {
+      "name": "Áo",
+      "id": 1
+    },
+    {
+      "name": "Quần",
+      "id": 2
+    },
+    {
+      "name": "Váy",
+      "id": 3
+    },
+    {
+      "name": "Giày",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "email": "anna@gmail.com",
+      "password": "$2a$10$DjsB5f2Nf9SdnwjLYa5zCuQZpDnYzWwxVrLbxUqn7XuDkbwGqBSSi",
+      "name": "Nguyễn ana",
+      "id": 1
+    },
+    {
+      "email": "thanhnt@gmail.com",
+      "password": "$2a$10$/cSHHKtzKShALP5vMXW8oe3xx5UoeNqY3Bn4jlhxa.r0dCxEcSChy",
+      "name": "Nguyễn Thị Thanh",
+      "id": 2
+    },
+    {
+      "email": "hieeut2@gmail.com",
+      "password": "$2a$10$MMs3o5XStZahcr35jDKrS.1EA9cJqzH/uDejzEGSE4mt6qOYJM5RW",
+      "name": "Trần Minh Hiếu",
+      "id": 3
+    }
+  ]
+}
